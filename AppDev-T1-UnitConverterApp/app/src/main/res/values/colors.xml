@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main application colors -->
+    <color name="primary">#6750A4</color>
+    <color name="primary_pressed">#4F378B</color>
+
+    <!-- Background colors -->
+    <color name="background_white">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#666666</color>
+
+    <!-- Border color -->
+    <color name="border">#CCCCCC</color>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Unit Converter App</string>
+    <string name="app_title">Unit Converter</string>
+    <string name="category">Category</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="from_unit">From Unit</string>
+    <string name="to_unit">To Unit</string>
+    <string name="convert">CONVERT</string>
+    <string name="result">RESULT</string>
+    <string name="result_placeholder">Result will appear here</string>
+</resources>
