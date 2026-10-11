@@ -1,76 +1,71 @@
-# OIBSIP
-# Unit Converter Android App
+# OIBSIP | Android Development Internship Projects
 
-A simple, clean Android app built with Java and XML for converting values between common measurement units. It's structured around solid OOP principles, so adding new categories or units later is straightforward rather than a headache.
+This repository contains three Android applications developed with Java and XML in Android Studio as part of the OASIS INFOBYTE internship program. Each task is maintained as a separate Android Studio project.
 
-The app updates the available units automatically based on the category you pick, checks your input before doing any math, and shows results with the correct unit symbols attached.
+## Projects
 
-## What it does
+### Task 1: Unit Converter App
 
-- Converts between all the common measurement units
-- Handles multiple conversion categories in one place
-- Updates the "From" and "To" dropdowns automatically when you switch categories
-- Validates input and won't let empty or invalid values through
-- Runs accurate conversions and formats the output cleanly
-- Shows a Toast message if something's off with your input
-- Built with reusable, modular converter classes instead of one giant if-else block
+A modular unit-conversion application supporting common measurement categories.
 
-## Supported categories
+- Converts length, weight, temperature, and volume values
+- Updates available units based on the selected category
+- Validates input and formats results with unit symbols
+- Uses reusable converter classes and object-oriented design
 
-**Length**
-Meter, Centimeter, Kilometer, Inch, Foot
+**Technologies:** Java, XML, Android SDK
 
-**Weight**
-Kilogram, Gram, Pound
+[View Task 1 source code and documentation](./AppDev-T1-UnitConverterApp/)
 
-**Temperature**
-Celsius, Fahrenheit, Kelvin
+### Task 2: To-Do App with Login
 
-**Volume**
-Liter, Milliliter, Gallon
+A task-management application with user authentication and local data persistence.
 
-## Built with
+- User registration and login
+- Password hashing
+- Create, view, update, and delete tasks
+- SQLite storage and session management
+- RecyclerView-based task display
 
-- Java
-- XML
+**Technologies:** Java, XML, SQLite, RecyclerView, Android SDK
+
+[View Task 2 source code and documentation](./AppDev-T2-TodoAppWithLogin/)
+
+### Task 3: Calculator App
+
+A basic arithmetic calculator with a dedicated calculation engine and expression evaluator.
+
+- Addition, subtraction, multiplication, and division
+- Numeric and decimal input
+- Expression and result display
+- Clear and backspace controls
+- Division-by-zero error handling
+
+**Technologies:** Java, XML, Android SDK
+
+[View Task 3 source code and documentation](./AppDev-T3-CalculatorApp/)
+
+## Tools and Technologies
+
 - Android Studio
-- Android SDK
-- Gradle
-- Git / GitHub
+- Java
+- XML layouts
+- Android SDK and Gradle
+- Git and GitHub
+- SQLite for local storage in Task 2
 
-## Project structure
+## Running a Project
 
-The codebase separates concerns cleanly: UI logic, data models, the actual conversion math, and input validation all live in their own spaces instead of getting tangled together in one Activity.
+1. Clone or download this repository.
+2. Open the required task folder as a project in Android Studio.
+3. Allow Gradle synchronization to finish.
+4. Select an Android emulator or connected device.
+5. Run the app from Android Studio.
 
-```
-com.example.unitconverterapp
-│
-├── MainActivity.java
-│
-├── model
-│   ├── Unit.java
-│   └── ConversionCategory.java
-│
-├── converter
-│   ├── UnitConverter.java
-│   ├── FactorBasedConverter.java
-│   ├── LengthConverter.java
-│   ├── WeightConverter.java
-│   ├── TemperatureConverter.java
-│   ├── VolumeConverter.java
-│   └── ConverterFactory.java
-│
-└── utils
-    └── InputValidator.java
-```
+## Repository Structure
 
-`UnitConverter` defines the contract every converter follows, while `FactorBasedConverter` handles the shared logic for categories that convert through a simple multiplication factor (Length, Weight, Volume). Temperature gets its own converter since it needs actual formulas instead of a flat factor. `ConverterFactory` decides which converter to hand back based on the selected category, so `MainActivity` never has to know the details — it just asks for a converter and uses it.
+- AppDev-T1-UnitConverterApp: Unit Converter
+- AppDev-T2-TodoAppWithLogin: To-Do App with Login
+- AppDev-T3-CalculatorApp: Calculator
 
-## How it works
-
-1. Pick a category (Length, Weight, Temperature, or Volume)
-2. The From/To unit lists update automatically for that category
-3. Enter a value and hit convert
-4. `InputValidator` checks the input — if it's empty or not a valid number, you'll get a Toast telling you so
-5. `ConverterFactory` grabs the right converter for the category
-6. The result shows up formatted, with the correct unit symbol
+Each task folder includes its own README with project-specific details and run instructions.
