@@ -32,3 +32,8 @@ The project separates the user interface, data models, database operations, and 
 4. Run the app from Android Studio.
 
 This project was created as Task 2 of the OASIS INFOBYTE Android Development internship project set.
+## 📸 Application Preview
+
+![To-Do App with Login](ToDo_App.png)
+
+*To-Do App with Login developed using Java and XML as part of the OASIS INFOBYTE Android Development Internship, Task 2.*
