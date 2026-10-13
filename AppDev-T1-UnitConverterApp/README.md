@@ -65,6 +65,12 @@ com.example.unitconverterapp
 
 `UnitConverter` defines the contract every converter follows, while `FactorBasedConverter` handles the shared logic for categories that convert through a simple multiplication factor (Length, Weight, Volume). Temperature gets its own converter since it needs actual formulas instead of a flat factor. `ConverterFactory` decides which converter to hand back based on the selected category, so `MainActivity` never has to know the details — it just asks for a converter and uses it.
 
+## 📸 Application Preview
+
+![Unit Converter Android App](UnitConverter_App.png)
+
+*Unit Converter Android Application developed using Java and XML as part of the OASIS INFOBYTE Android Development Internship, Task 1.*
+
 ## How it works
 
 1. Pick a category (Length, Weight, Temperature, or Volume)
