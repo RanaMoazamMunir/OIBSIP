@@ -39,3 +39,9 @@ This separation keeps the Activity focused on UI interactions while calculation 
 4. Run the app from Android Studio.
 
 This project was created as Task 3 of the OASIS INFOBYTE Android Development internship project set.
+
+## 📸 Application Preview
+
+![Calculator Android App](Calculator_App_Interface.png)
+
+*Calculator Android Application developed using Java and XML as part of the OASIS INFOBYTE internship, Task 3.*
